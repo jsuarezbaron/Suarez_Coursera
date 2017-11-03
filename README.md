@@ -5,6 +5,8 @@ Repository for Week 1 Application Assignment of Introduction to Embedded Systems
 * This is the final code for the Week 1 Application Assignment.
 * Consist on eight functions in the stats.c implementation file:
 
+Consist on eight functions written in stats.c to prints the statistics of an array : array, minimum, maximum, mean, median and sort  array
+
 1. main() - The main entry point for your program
 2. print_statistics() - A function that prints the statistics of an array including minimum, maximum, mean, and median.
 3. print_array() - Given an array of data and a length, prints the array to the screen
