@@ -32,7 +32,6 @@ void print_statistics(unsigned char *array, unsigned int length);
 
 /**
 *@brief  Function to print the array to the screen. 
-*
 *This function takes an array of data and a length, prints the array to the screen.
 *@param array The array to be printed to the screen.
 *@param length The lenght or quantity elements of the array.
@@ -47,7 +46,7 @@ void print_array(unsigned char *array, unsigned  int length);
 *@param length The lenght or quantity elements of the array.
 *@return void
 */
-float find_median(unsigned char *array, unsigned  int length);
+int find_median(unsigned char *array, unsigned  int length);
 
 /**
 *@brief Function to calculate the meean value of a array.
@@ -56,7 +55,7 @@ float find_median(unsigned char *array, unsigned  int length);
 *@param length The lenght or quantity elements of the array.
 *@return median value
 */
-float find_mean(unsigned char *array, unsigned  int length);
+int find_mean(unsigned char *array, unsigned  int length);
 
 /**
 *@brief Function to find the maximun element of an array.
