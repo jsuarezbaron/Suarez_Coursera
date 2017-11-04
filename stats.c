@@ -38,17 +38,21 @@ void main() {
   /* Other Variable Declarations Go Here */
 
   /* Statistics and Printing Functions Go Here */
+    printf("The test array: \n");
  	print_array( test, SIZE );
  	print_statistics( test, SIZE);
- 	sort_array( test, SIZE );
+
 }
 
 /* Add other Implementation File Code Here */
 
 void print_statistics(unsigned char *array, unsigned int length){
 	
- 	printf("median = %f\n", find_median(array,length));
- 	printf("mean = %f\r\n", find_mean(array,length));
+	printf("The sorted array: \n");
+ 	sort_array( array,length );
+	printf("The statistics related to the test array are as follows: \n");
+ 	printf("median = %d\n", find_median(array,length));
+ 	printf("mean = %d\r\n", find_mean(array,length));
  	printf("maximum = %d\r\n", find_maximum(array,length));
  	printf("minimum = %d\r\n", find_minimum(array,length));
 	
@@ -63,7 +67,7 @@ void print_array(unsigned char *array, unsigned int length){
 	}
 }
 
-float find_median(unsigned char *array, unsigned  int length){
+int find_median(unsigned char *array, unsigned  int length){
 	unsigned int i,j;
 	float temp;
 	for( i=0; i<length; i++ ){
@@ -78,14 +82,14 @@ float find_median(unsigned char *array, unsigned  int length){
 	}
 
 	if (length % 2 == 0){
-		return ((int)array[length/2] + (int)array[length/2 -1]) / 2.0;
+		return ((int)array[length/2] + (int)array[length/2 -1]) / 2;
 	}
 	else{
 		return (int)array[length/2];
 	}
 }
 
- float find_mean(unsigned char *array, unsigned  int length){
+ int find_mean(unsigned char *array, unsigned  int length){
     int sum=0, i;
     for(i=0; i<length; i++){
         sum+=(int)array[i];
