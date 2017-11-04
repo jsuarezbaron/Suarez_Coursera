@@ -20,8 +20,6 @@
  *
  */
 
-
-
 #include <stdio.h>
 #include "stats.h"
 #include <stdint.h>
