@@ -38,8 +38,6 @@ void main() {
                                 7,  87, 250, 230,  99,   3, 100,  90};
 
   /* Other Variable Declarations Go Here */
-    //float Median;
-   // Median = find_median( test, SIZE);
 
   /* Statistics and Printing Functions Go Here */
  	print_array( test, SIZE );
